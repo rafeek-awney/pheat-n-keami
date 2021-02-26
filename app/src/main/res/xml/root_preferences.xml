@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general_title">
+        <ListPreference
+            app:defaultValue="ar"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:key="lang_code"
+            app:title="@string/language_title"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Widgets">
+        <ListPreference
+            app:defaultValue="1"
+            app:entries="@array/coptic_calender_entries"
+            app:entryValues="@array/coptic_calender_values"
+            app:key="coptic_calender_code"
+            app:title="ϯⲣⲟⲙⲡⲓ ⲡⲓⲣⲉⲙⲛ̀Ⲭⲏⲙⲓ"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="0"
+            app:entries="@array/coptic_calender_numbers"
+            app:entryValues="@array/coptic_calender_numbers_values"
+            app:key="coptic_calender_numbers"
+            app:title="calender numbers - ارقام التقويم"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
